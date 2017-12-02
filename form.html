@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Party Time</title>
+    <title>Form</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,11 +29,24 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="introduction">
-                <h1>Party Time</h1>
-                <p>Party Time is a web app that allows you to plan for events such as Christmas parties, birthday parties, and much more. How is it special? Party Time provides space for specific planning, including activities, invites, decorations, food, location, and time. One of the special features is the Memory Keeper, where you can store and/or share your fun memories with your friends. Party Time also has a chat function for effective communication.</p>
+                <h1 id="formTitle">Party Planning</h1>
             </div>
+            <p id="line">Please fill out this form.</p>			
+			<div class="container" id="formUp">
+				<div class="col-lg-4 offset-3"> 
+					<form action="insert-server-here" id="form-text-colour">
+					Title: <input type="text" name="Username" value=""><br><br>
+					Discription: <input type="text" name="Password" value=""><br><br>
+					Time: <input type="text" name="Username" value=""><br><br>
+					Location: <input type="text" name="Password" value=""><br><br>
+					Guests: <input type="text" name="Username" value=""><br><br>				
+					<!--input type="submit" value="Submit"-->
+					</form>
+				</div>		
+			</div>			
 			<div class="container-fluid buttons">
-                <button class="startButton">Get Started</button>
+				<a class="loginButton" href="./event.html">DONE</a>
+				<!--make a link for "Create An Account"-->
             </div>
 			
             <div id="options" class="row"></div>

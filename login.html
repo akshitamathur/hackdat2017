@@ -25,14 +25,15 @@
         <div id="page-content-wrapper">
             <div class="introduction">
                 <h1>Login</h1>
-                <p>Please login to your account or create a new one!</p>
-				<form action="insert-server-here" class="inputs">
-				Username: <input type="text" name="fname"><br>
-				Password: <input type="text" name="fname"><br>
-				</form>
+                <p>Please login to your account or create a new one!</p>			
 			</div>
+			<form action="insert-server-here" class="inputs">
+				Username: <input type="text" name="Username" value=""><br><br>
+				Password: <input type="text" name="Password" value=""><br>
+				<!--input type="submit" value="Submit"-->
+			</form>				
 			<div class="container-fluid buttons">
-                <button class="loginButton">LOGIN</button>
+				<a class="loginButton" href="./allEvents.html">LOGIN</a>
 				<!--make a link for "Create An Account"-->
             </div>
 
@@ -43,6 +44,7 @@
     <script src="js/main.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+	
 </body>
 
 </html>
