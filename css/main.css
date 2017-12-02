@@ -1,7 +1,38 @@
-body{
-	background-color: black;
+body
+{
+	background-color: white;
 }
 
-h1{
-	color: orange;
+/*.introduction
+{
+	position: fixed; /* or absolute 
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	line-height: 1.5;
+}
+*/
+body 
+{
+	font-family: 'Aclonica';font-size: 22px;
+}
+
+.introduction 
+{
+    margin-top: 2%;
+	ine-height: 200px;
+    height: 200px;
+    /*border: 3px solid green;*/
+    text-align: center;
+}
+
+/* If the text has multiple lines, add the following: */
+.introduction p 
+{
+    line-height: 2;
+    display: inline-block;
+    vertical-align: middle;
+	margin-right: 120px;
+    margin-left: 120px;
+    font-size: 80%;	
 }
