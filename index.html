@@ -15,11 +15,12 @@
 
     <!-- Custom styles for this template -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>	
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>	
 </head>
 
-<body>
+<body class="index">
 
     <div id="wrapper">
 
@@ -28,17 +29,15 @@
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
-            <div class="introduction">
-                <h1>Party Time</h1>
-                <p>Party Time is a web app that allows you to plan for events such as Christmas parties, birthday parties, and much more. How is it special? Party Time provides space for specific planning, including activities, invites, decorations, food, location, and time. One of the special features is the Memory Keeper, where you can store and/or share your fun memories with your friends. Party Time also has a chat function for effective communication.</p>
+            <div class="introduction" id="intro">
+                <h1 class="animated bounceInDown">Party Time</h1>
+                <p class="animated bounceInUp">Party Time is a web app that allows you to plan for events such as Christmas parties, birthday parties, and much more. How is it special? Party Time provides space for specific planning, including activities, invites, decorations, food, location, and time. One of the special features is the Memory Keeper, where you can store and/or share your fun memories with your friends. Party Time also has a chat function for effective communication.</p>
             </div>
-			<div class="container-fluid buttons">
-                <button class="startButton" onclick="options();">Let's Get Started</button>
+            <div class="container-fluid buttons">
+                <button class="startButton animated bounce" onclick="options();">Let's Get Started</button>
             </div>
 
-            <div id="options" class="row">
-                
-            </div>
+            <div id="options" class="row"></div>
 
 
 
@@ -60,7 +59,7 @@
             $("#wrapper").toggleClass("toggled");
         });
     </script>
-	-->
+-->
 
 </body>
 
