@@ -17,6 +17,7 @@
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/event.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
 
 </head>
 
@@ -26,10 +27,10 @@
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
+            <ul class="sidebar-nav active">
                 <li class="sidebar-brand">
                     <a href="#">
-                        --EVENT NAME--
+                        --EVENT NAME HERE --
                     </a>
                 </li>
                 <li>
@@ -50,60 +51,93 @@
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
-            <div class="container-fluid" id="games">
-                <h1>Game & Entertainment</h1>
-                <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
-            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
+            <div class="container-fluid" id="intro">
+              <h1>3 simple steps!</h1>
+              <ol>
+                <li>Go through out endless list of choices for games & entertainment, food and decor and give your guests as much or as little control as you'd like.</li>
+                <li>Once you're happy with your selection - review the completed invite on the last tab and send!</li>
+                <li>Watch the results pour in and start working on making the party a great one!</li>
+            </ol>
 
-         <div id="page-content-wrapper">
-            <div class="container-fluid" id="food">
-                <h1>food</h1>
-                <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
-            </div>
+            <button class="btn btn-2">
+                <a href="#menu-toggle" id="menu-toggle">Get Started</a>
+            </button>
         </div>
-        <!-- /#page-content-wrapper -->
-
-         <div id="page-content-wrapper">
-            <div class="container-fluid" id="decor">
-                <h1>decor</h1>
-                <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
-            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
-
-         <div id="page-content-wrapper">
-            <div class="container-fluid" id="invite">
-                <h1>invite</h1>
-                <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-                <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
-            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
-
     </div>
-    <!-- /#wrapper -->
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="js.main.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Menu Toggle Script -->
-    <script>
+    <div id="page-content-wrapper">
+        <div class="container-fluid" id="games">
+            <h1>Games & Entertainment</h1>
+
+            <input type="checkbox" name="acs" value="Mobile">Mobile<br>
+    <input type="checkbox" name="acs" value="Tab">Tab<br>
+    <input type="checkbox" name="acs" value="Laptop">Laptop<br>
+    <input type="checkbox" name="acs" value="IPod">IPod<br>
+    <p>
+        <input type="button" onclick='printChecked()' value="Print Selected Items"/>
+    </p>
+
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    <div id="page-content-wrapper">
+        <div class="container-fluid" id="food">
+            <h1>food</h1>
+            <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+            <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    <div id="page-content-wrapper">
+        <div class="container-fluid" id="decor">
+            <h1>decor</h1>
+            <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+            <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    <div id="page-content-wrapper">
+        <div class="container-fluid" id="invite">
+            <h1>invite</h1>
+            <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+            <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/event.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript">
+
+    $('.checkbox').click(function(){
+  $(this).toggleClass('checked');
+  var cb = $(this).find("input");
+  cb.prop("checked", !cb.prop("checked"));
+});
+
+</script>
+
+<!-- Menu Toggle Script -->
+<script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
-    </script>
+</script>
 
 </body>
 
