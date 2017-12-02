@@ -17,7 +17,6 @@
     <link href="css/simple-sidebar.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>	
-
 </head>
 
 <body>
@@ -33,22 +32,33 @@
                 <h1>Party Time</h1>
                 <p>Party Time is a web app that allows you to plan for events such as Christmas parties, birthday parties, and much more. How is it special? Party Time provides space for specific planning, including activities, invites, decorations, food, location, and time. One of the special features is the Memory Keeper, where you can store and/or share your fun memories with your friends. Party Time also has a chat function for effective communication.</p>
             </div>
+			<div class="container-fluid buttons">
+                <button class="startButton" onclick="options();">Let's Get Started</button>
+            </div>
+
+            <div id="options" class="row">
+                
+            </div>
+
+
+
+
         </div>
         <!-- /#page-content-wrapper -->
-
     </div>
     <!-- /#wrapper -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Menu Toggle Script 
     <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
     </script>
 	-->
 
