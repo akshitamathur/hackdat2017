@@ -17,9 +17,10 @@
     <link href="css/simple-sidebar.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>	
+	
 </head>
 
-<body>
+<body id="formBody">
 
     <div id="wrapper">
 
@@ -33,12 +34,20 @@
             </div>
             <p id="line">Please fill out this form.</p>			
 			<div class="container" id="formUp">
-				<div class="col-lg-4 offset-3"> 
+				<div class="col-lg-3 offset-3"> 
 					<form action="insert-server-here" id="form-text-colour">
-					Title: <input type="text" name="Username" value=""><br><br>
+					Event Name: <input type="text" name="Username" value=""><br><br>
 					Discription: <input type="text" name="Password" value=""><br><br>
 					Time: <input type="text" name="Username" value=""><br><br>
+					
 					Location: <input type="text" name="Password" value=""><br><br>
+					
+					<div class="col-lg-12 offset-11" id="map"></div>
+					<!-- Replace the value of the key parameter with your own API key. -->
+					<script async defer
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsJujb3yinsjyIrkhukeV8u1NpAgiPiNM&callback=initMap">
+					</script>		
+
 					Guests: <input type="text" name="Username" value=""><br><br>				
 					<!--input type="submit" value="Submit"-->
 					</form>
@@ -52,24 +61,10 @@
             <div id="options" class="row"></div>
 
         </div>
-        <!-- /#page-content-wrapper -->
     </div>
-    <!-- /#wrapper -->
-
-    <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Menu Toggle Script 
-    <script>
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-        });
-    </script>
-	onclick="options();"
-	-->
 
 </body>
 

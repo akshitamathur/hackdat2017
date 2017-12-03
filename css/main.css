@@ -136,6 +136,8 @@ input
 }
 .loginButton
 {
+	text-align: center;
+	display: inline-block; 
 	width: 10%;
 	background-color: orange;
 	border: none;
@@ -149,7 +151,7 @@ input
 	font-size: 1rem;
 	letter-spacing: .8px;
 	margin: 0.888rem 3.301rem;
-	padding: 0.800rem 2.3rem;
+	padding: 0.800rem 0.3rem;
 	text-decoration: none;
 	text-transform: uppercase;
 	-webkit-transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -171,7 +173,6 @@ input
     -o-transform: translateY(2px);
     transform: translateY(2px);
 }
-
 
 .btn {
   flex: 1 1 auto;
@@ -285,4 +286,24 @@ a:active
 {
 	margin-top: -80px;	
 }
-
+#map 
+{
+  height: 400px;
+  width: 100%;
+}
+.centerText
+{
+    margin-left: 3%;
+}
+#formBody
+{
+    height: 5000px;	
+    width: 100wh;
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    overflow-y: scroll;	
+}
