@@ -15,11 +15,12 @@
 
     <!-- Custom styles for this template -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>	
+	<link href="css/main.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>	
+
 </head>
 
-<body>
+<body id="formBody">
 
     <div id="wrapper">
 
@@ -32,6 +33,7 @@
                 <h1 id="formTitle">Party Planning</h1>
             </div>
             <p id="line">Please fill out this form.</p>			
+
             <div class="container" id="formUp">
                 <div class="row">
                 <div class="col-lg-4"> 
@@ -47,20 +49,19 @@
                 <form action="insert-server-here" id="form-text-colour">
                         Location: <input type="text" name="Password" value=""><br><br>
                        Guests: <input type="text" name="Username" value=""><br><br> 
+                        Guests: <input type="text" name="Username" value=""><br><br> 
                        </form>
                </div>
 
                 <div class="col-lg-4">
-                <form action="insert-server-here" id="form-text-colour">
-                        Location: <input type="text" name="Password" value=""><br><br>
-                       Guests: <input type="text" name="Username" value=""><br><br> 
-                       </form>
+               <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsJujb3yinsjyIrkhukeV8u1NpAgiPiNM&callback=initMap">
+                    </script>   
                </div>
                    <div class="container-fluid buttons">
                     <a width="100%" class="btn btn-2" href="./event.html">DONE</a>
                     <!--make a link for "Create An Account"-->
                 </div>
-            </div>
 
             </div>		
         </div>			
@@ -86,8 +87,7 @@
         });
     </script>
 	onclick="options();"
--->
-
+--> 
 </body>
 
 </html>

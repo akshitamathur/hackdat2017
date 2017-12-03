@@ -98,9 +98,12 @@ input:focus{
 }
 .buttons
 {
+
 	margin-left: 40% !important;
     margin-top: 15px !important;
+
 }
+
 
 .btn {
   flex: 1 1 auto;
@@ -134,7 +137,7 @@ input:focus{
 
 #games
 {
-	margin-bottom: 52%; 
+	margin-bottom: 55%; 
 }
 
 #food
@@ -144,7 +147,7 @@ input:focus{
 
 #decor
 {
-    margin-bottom: 50%;
+    margin-bottom: 70%;
 }
 
 #invite
@@ -215,9 +218,6 @@ a:active
 	margin-top: -80px;	
 }
 
-#words{
-
-}
 
 form {
   padding: 20px 0;
@@ -269,3 +269,26 @@ form button {
 form button:hover {
   background-color: #f5f7f9;
 }
+
+#map 
+{
+  height: 400px;
+  width: 100%;
+}
+.centerText
+{
+    margin-left: 0%;
+}
+#formBody
+{
+    height: 5000px;	
+    width: 100wh;
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    overflow-y: scroll;	
+}
+
