@@ -44,3 +44,14 @@
 .checkbox.checked:hover:after {
   background-color: #eeeeee;
 }
+
+
+ol{
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+h1{
+	font-size: 2.5em !important;
+}
+

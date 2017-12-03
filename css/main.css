@@ -56,7 +56,7 @@ h1
 
 .introduction 
 {
-    margin-top: 10%;
+    /*margin-top: 10%;*/
     line-height: 200px;
     height: 200px;
     /*border: 3px solid green;*/
@@ -86,14 +86,20 @@ h1
 
 input 
 {
-	background-color: rgba(0,0,0,0.8);
+	background-color: transparent;
 	color: #FFF;
 	border: none;
+    border-bottom: 1px solid black;
+}
+
+input:focus{
+    border: 1px solid grey;
+
 }
 .buttons
 {
-	margin-left: 43%;
-    margin-top: 15px;
+	margin-left: 40% !important;
+    margin-top: 15px !important;
 }
 
 .btn {
@@ -105,10 +111,10 @@ input
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
- /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
   box-shadow: 0 0 20px #eee;
   border-radius: 10px;
- }
+}
 
 .btn:hover {
   background-position: right center; /* change the direction of the change here */
@@ -151,11 +157,11 @@ input
     background-color: transparent; 
     color: white; 
     border: 2px solid #4CAF50;
-	font-size: 800%;
-	padding: 0px 50px;
-	height: 210px;	
-	position:relative; left:10%; top:-100px;
-	display: inline-block;
+    font-size: 800%;
+    padding: 0px 50px;
+    height: 210px;	
+    position:relative; left:10%; top:-100px;
+    display: inline-block;
 }
 
 .add:hover 
@@ -209,3 +215,57 @@ a:active
 	margin-top: -80px;	
 }
 
+#words{
+
+}
+
+form {
+  padding: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+form input {
+
+    appearance: none;
+    outline: 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 250px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    /*margin: 0 auto 10px auto;*/
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    font-weight: 300;
+}
+form input:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+form input:focus {
+  background-color: white;
+  width: 300px;
+  color: #53e3a6;
+}
+form button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  background-color: white;
+  border: 0;
+  padding: 10px 15px;
+  color: #53e3a6;
+  border-radius: 3px;
+  width: 250px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+form button:hover {
+  background-color: #f5f7f9;
+}
